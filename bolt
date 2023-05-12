@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check the number of arguments
+if [ $# -eq 0 ]; then
+    #run the interpreter
+    python3 boltinterpreter.py interpreter
+else
+    echo "Number of arguments: $#"
+    
+    # Loop through the arguments
+    for arg in "$@"; do
+        echo "Argument: $arg"
+    done
+fi
